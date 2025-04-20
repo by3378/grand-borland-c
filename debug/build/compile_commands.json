@@ -1,0 +1,38 @@
+[
+{
+  "directory": "C:/Users/eyx/Desktop/debug/build",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/driver.dir/includes_C.rsp -g -o CMakeFiles\\driver.dir\\driver.c.obj -c C:\\Users\\eyx\\Desktop\\debug\\driver.c",
+  "file": "C:/Users/eyx/Desktop/debug/driver.c",
+  "output": "CMakeFiles/driver.dir/driver.c.obj"
+},
+{
+  "directory": "C:/Users/eyx/Desktop/debug/build",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/driver.dir/includes_C.rsp -g -o CMakeFiles\\driver.dir\\calculate.c.obj -c C:\\Users\\eyx\\Desktop\\debug\\calculate.c",
+  "file": "C:/Users/eyx/Desktop/debug/calculate.c",
+  "output": "CMakeFiles/driver.dir/calculate.c.obj"
+},
+{
+  "directory": "C:/Users/eyx/Desktop/debug/build",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/driver.dir/includes_C.rsp -g -o CMakeFiles\\driver.dir\\file.c.obj -c C:\\Users\\eyx\\Desktop\\debug\\file.c",
+  "file": "C:/Users/eyx/Desktop/debug/file.c",
+  "output": "CMakeFiles/driver.dir/file.c.obj"
+},
+{
+  "directory": "C:/Users/eyx/Desktop/debug/build",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/driver.dir/includes_C.rsp -g -o CMakeFiles\\driver.dir\\ar.c.obj -c C:\\Users\\eyx\\Desktop\\debug\\ar.c",
+  "file": "C:/Users/eyx/Desktop/debug/ar.c",
+  "output": "CMakeFiles/driver.dir/ar.c.obj"
+},
+{
+  "directory": "C:/Users/eyx/Desktop/debug/build",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/driver.dir/includes_C.rsp -g -o CMakeFiles\\driver.dir\\queue.c.obj -c C:\\Users\\eyx\\Desktop\\debug\\queue.c",
+  "file": "C:/Users/eyx/Desktop/debug/queue.c",
+  "output": "CMakeFiles/driver.dir/queue.c.obj"
+},
+{
+  "directory": "C:/Users/eyx/Desktop/debug/build",
+  "command": "D:\\mingw64\\bin\\gcc.exe  @CMakeFiles/driver.dir/includes_C.rsp -g -o CMakeFiles\\driver.dir\\gene.c.obj -c C:\\Users\\eyx\\Desktop\\debug\\gene.c",
+  "file": "C:/Users/eyx/Desktop/debug/gene.c",
+  "output": "CMakeFiles/driver.dir/gene.c.obj"
+}
+]

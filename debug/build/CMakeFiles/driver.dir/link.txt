@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\driver.dir/objects.a
+D:\mingw64\bin\ar.exe qc CMakeFiles\driver.dir/objects.a @CMakeFiles\driver.dir\objects1.rsp
+D:\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\driver.dir/objects.a -Wl,--no-whole-archive -o build\driver.exe -Wl,--out-implib,libdriver.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\driver.dir\linkLibs.rsp
