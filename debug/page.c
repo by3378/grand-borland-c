@@ -204,11 +204,34 @@ void draw_choosed_stock( int* choice , int* total )
         SAFE_READ( &stock, sizeof(stock_data2), 1, stockfp);
         if( choice[i] == 1 )
         {
-            num++;
-            
-            /* ......  */
-        }
-    }
+            char str[4][5] = { 0 };
+	    num++;
+            sprintf(str[0], "%.2f", stock->open);
+            sprintf(str[1], "%.2f", stock->close);
+	    sprintf(str[2], "%.2f", stock->high);
+            sprintf(str[3], "%.2f", stock->low);
+ 
+
+           settextstyle(SMALL_FONT, HORIZ_DIR, 8);
+           setcolor(YELLOW);
+           outtextxy(10, 42 + num * 20, stock->code);//代码
+           puthz(90, 44 + num * 20, stock->name16, 16, YELLOW);//名称
+           puthz(430, 44 + num * 20, stock->industry, 16, 16, YELLOW);//行业
+           puthz(520, 44 + num * 20, stock->region, 16, 16, YELLOW);//地区
+           outtextxy(235, 43 + num * 20, str[2]);//最高
+           outtextxy(302, 43 + num * 20, str[3]);//最低
+
+           if (stock->open > stock->close) {
+               setcolor(RED);
+               outtextxy(176, 43 + num * 20, str[0]);//今开
+               outtextxy(368, 43 + num * 20, str[1]);//昨收
+          }
+          else {
+               setcolor(GREEN);
+               outtextxy(176, 43 + num * 20, str[0]);//今开
+               outtextxy(368, 43 + num * 20, str[1]);//昨收
+         }
+      }
     *total = num;
     close_file( stockfp, "main", ".stock");
 }
