@@ -138,18 +138,18 @@ void draw_stock() {
     floodfill(50, 50, 8);
     setcolor(RED);
     rectangle(0, 20, 640, 40);
-    puthz(5, 21, "����", 16, 16, LIGHTCYAN);
+    puthz(585, 21, "添加", 16, 16, LIGHTCYAN);
     setcolor(LIGHTCYAN);
     settextstyle(SMALL_FONT, HORIZ_DIR, 8);
-    outtextxy(36, 14, "+");
-    puthz(80, 21, "����", 16, 16, LIGHTGRAY);
-    puthz(150, 21, "����", 16, 16, LIGHTGRAY);
-    puthz(230, 21, "��", 16, 16, LIGHTGRAY);
-    puthz(290, 21, "���", 16, 16, LIGHTGRAY);
-    puthz(350, 21, "���", 16, 16, LIGHTGRAY);
-    puthz(410, 21, "����", 16, 16, LIGHTGRAY);
-    puthz(470, 21, "ϸ����ҵ", 16, 16, LIGHTGRAY);
-    puthz(570, 21, "����", 16, 16, LIGHTGRAY);
+    outtextxy(620, 14, "+");
+    puthz(22, 21, "代码", 16, 16, LIGHTGRAY);
+    puthz(104, 21, "名称", 16, 16, LIGHTGRAY);
+    puthz(183, 21, "今开", 16, 16, LIGHTGRAY);
+    puthz(242, 21, "最高", 16, 16, LIGHTGRAY);
+    puthz(305, 21, "最低", 16, 16, LIGHTGRAY);
+    puthz(372, 21, "昨收", 16, 16, LIGHTGRAY);
+    puthz(430, 21, "细分行业", 16, 16, LIGHTGRAY);
+    puthz(520, 21, "地区", 16, 16, LIGHTGRAY);
 }
 
 
