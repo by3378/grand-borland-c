@@ -15,7 +15,7 @@
 
 void main() {
 	
-	//nt page = 1;
+	int page = 1;
 	int gd = VGA;
 	int gm = VGAHI;
 	initgraph(&gd, &gm, "C:\\borlandc\\BGI");
@@ -26,25 +26,25 @@ void main() {
 	//	switch (page) {
 
 	//	case 1: {
-	//		page = page_welcome();//µÇÂ¼½çÃæ
+	//		page = page_welcome();//ç™»å½•ç•Œé¢
 	//	}
 	//	case 2: {
-	//		page = page_register();//×¢²á½çÃæ
+	//		page = page_register();//æ³¨å†Œç•Œé¢
 	//	}/*
 	//	case 3: {
-	//		page = page_stock();//ĞĞÇé½çÃæ£¬¿É²é¿´×ÔÑ¡¹É
+	//		page = page_stock();//è¡Œæƒ…ç•Œé¢ï¼Œå¯æŸ¥çœ‹è‡ªé€‰è‚¡
 	//	}
 	//	case 4: {
-	//		page = page_market();//ÊĞ³¡½çÃæ£¬¿ÉÌí¼Ó×ÔÑ¡¹É
+	//		page = page_market();//å¸‚åœºç•Œé¢ï¼Œå¯æ·»åŠ è‡ªé€‰è‚¡
 	//	}*/
 	//	case 5: {
-	//		page = page_search();//ÎÊĞ¡´ïËÑË÷½çÃæ
+	//		page = page_search();//é—®å°è¾¾æœç´¢ç•Œé¢
 	//	}
 	//	/*case 6: {
-	//		page = page_predict();//ÎÊĞ¡´ïÔ¤²â½çÃæ
+	//		page = page_predict();//é—®å°è¾¾é¢„æµ‹ç•Œé¢
 	//	}
 	//	case 7: {
-	//		page = page_indicator();//¹ÉÆ±Ö¸±ê½çÃæ
+	//		page = page_indicator();//è‚¡ç¥¨æŒ‡æ ‡ç•Œé¢
 	//	}*/
 	//	}
 	//}
