@@ -1,16 +1,4 @@
-#include <stdio.h>
-#include <math.h>
-#include <float.h>
-#include <stdlib.h>
-
-#include "stock.h"
-#include "calculate.h"
 #include "global.h"
-#include "file.h"
-#include "queue.h"
-#include "draw.h"
-#include "ar.h"
-#include "gene.h"
 
 /********** KLINE *************/
 void calculate_kline( stock_data* stock, enum line_type type )

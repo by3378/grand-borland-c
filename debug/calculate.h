@@ -1,8 +1,6 @@
 #ifndef CALCULATE_H
 #define CALCULATE_H
 
-#include <stdio.h>
-#include "stock.h"
 #include "global.h"
 
 #define CALCULATE_EMA(close, argv, ema_prev) (2.0*(close)/((argv)+1) + (ema_prev)*(1-2.0/((argv)+1)))

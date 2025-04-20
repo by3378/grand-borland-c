@@ -1,10 +1,7 @@
 #ifndef FILE_H
 #define FILE_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <errno.h>
-#include "stock.h"
+#include "global.h"
 
 #define DEBUG
 //#define BORLANDC

@@ -1,18 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <float.h>
-#include <graphics.h>
-#include <dos.h>
-#include <assert.h>
-#include <math.h>
-
-#include "stock.h"
-#include "calculate.h"
 #include "global.h"
-#include "file.h"
-#include "draw.h"
-#include "gene.h"
-
 
 void write_axis_number( const most_value* most, axis_data* axis )
 {

@@ -1,18 +1,7 @@
 #ifndef AR_H
 #define AR_H
 
-#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <float.h>
-#include <string.h>
-#include "ar.h"
-#include "file.h"
-#include "stock.h"
-#include "draw.h"
 #include "global.h"
-#include "calculate.h"
 
 int choose_p( float* data, int n, int max_p );
 void pre_process( float* arr, int n, float* average, float* standard);

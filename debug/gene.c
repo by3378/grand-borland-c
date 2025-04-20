@@ -1,12 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#include <time.h>
-#include <float.h>
-#include <assert.h>
-#include "stock.h"
-#include "file.h"
-#include "gene.h"
 #include "global.h"
 
 void initialize_population( individual_data* population )

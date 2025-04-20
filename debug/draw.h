@@ -1,10 +1,7 @@
 #ifndef DRAW_H
 #define DRAW_H
 
-#include <stdio.h>
-#include "stock.h"
 #include "global.h"
-#include <math.h>
 
 #define CALCULATE_Y(axis, value) \
 ( axis->y + ROUND( \

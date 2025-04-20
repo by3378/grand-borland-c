@@ -1,9 +1,8 @@
 #ifndef GENE_H
 #define GENE_H
 
-#include <math.h>
-#include "stock.h"
 #include "global.h"
+
 #define TRAIN_DAYS 200
 #define MAX_POPULATION 50
 #define MAX_GENERATION 30

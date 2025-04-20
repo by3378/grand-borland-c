@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-#include "queue.h"
+#include "global.h"
 
 void init_queue( monotonic_queue* q, int window_size) 
 {
@@ -18,7 +15,7 @@ void free_queue( monotonic_queue* q)
     free(q->indices);
 }
 
-int isEmpty( monotonic_queue* q ) 
+int isempty( monotonic_queue* q ) 
 {
     return q->rear == q->front;
 }
@@ -34,7 +31,7 @@ void enqueue( monotonic_queue* q, float value, int index, int (*compare)(float, 
 {
     /* delete elements that do not satisfy the comparison from the rear */
     int tail = (q->rear-1+q->window_size) % q->window_size; /* point to the last element */
-    while( !isEmpty(q) && compare(q->data[tail], value) )
+    while( !isempty(q) && compare(q->data[tail], value) )
     {
         q->rear = tail;
         tail = (q->rear-1+q->window_size) % q->window_size;
@@ -58,7 +55,7 @@ int min_compare( float a, float b )
 /* dequeue the front element (when the window slides out of range) */
 void dequeue( monotonic_queue* q, int window_start ) 
 {
-    while( !isEmpty(q) && q->indices[q->front] < window_start)
+    while( !isempty(q) && q->indices[q->front] < window_start)
         q->front = (q->front + 1) % q->window_size;
 
 }

@@ -1,19 +1,16 @@
 #ifndef PAGE_H
 #define PAGE_H
 
-#include "stock.h"
 #include "global.h"
 
-#define STOCK_NUM 10
+enum page{ WELCOME, REGISTER, INDICATOR, STATUS, MARKET, PREDICT, EXIT };
 
-typedef struct
-{
-    char name[12];
-    char password[12];
-}user_data;
-
-void choose_page( const user_data* use, bool isnew );
-void indicator_page( const stock_data* stock );
-void predict_page( const stock_data* stock );
+int page_welcome( user_data* user );
+int page_register( user_data* user );
+int page_status( const user_data* user , stock_data* stock ); 
+void draw_choosed_stock( int* choice , int* total );
+int page_indicator( const stock_data* stock );
+int page_predict( const stock_data* stock );
+int page_market( const user_data* user );
 
 #endif

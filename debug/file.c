@@ -1,14 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-#include "stock.h"
-#include "calculate.h"
 #include "global.h"
-#include "file.h"
-#include "draw.h"
-#include "choose.h"
-
 
 FILE* open_file( const char* code , enum line_type type, const char* mode )
 {
