@@ -1,5 +1,4 @@
 #include "global.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <float.h>
@@ -109,22 +108,19 @@ void draw_register()
 
 
 
-//�������˵���
+//绘制主菜单栏
 void draw_home()
 {
     setfillstyle(SOLID_FILL, WHITE);
     rectangle(0, 0, 640, 20);
-   // floodfill(1, 1, BLACK);
     floodfill(1, 1, 1);
-    puthz(10, 2, "ͨ���Ž��ڶ�", 16, 16, 8);
-    puthz(130, 2, "����", 16, 16, 8);
-    puthz(180, 2, "�г�", 16, 16, 8);
-    puthz(230, 2, "��С��", 16, 16, 8);
-    setcolor(8);
-    settextstyle(SMALL_FONT, HORIZ_DIR, 5);
-    outtextxy(470, 2, "19:21:26");
-    puthz(550, 2, "����", 16, 16, 8);
-    puthz(600, 2, "�˳�", 16, 16, 8);
+    puthz(10, 2, "通达信金融端", 16, 16, 8);
+    puthz(130, 2, "行情", 16, 16, 8);
+    puthz(180, 2, "市场", 16, 16, 8);
+    puthz(230, 2, "问小达", 16, 16, 8);
+    puthz(295, 2, "资讯", 16, 16, 8);
+    puthz(550, 2, "周四", 16, 16, 8);
+    puthz(600, 2, "退出", 16, 16, 8);
 }
 
 
@@ -332,6 +328,117 @@ void draw_market() {
     outtextxy(574, 401, "-10.87%");
     outtextxy(574, 421, "-10.26%");
     outtextxy(580, 441, "-9.98%");
+}
+
+
+void draw_news() {
+	char str[20][50];
+	{
+		FILE* fp1 = fopen("C:\\1.txt", "r");
+		FILE* fp2 = fopen("C:\\2.txt", "r");
+		FILE* fp3 = fopen("C:\\3.txt", "r");
+		FILE* fp4 = fopen("C:\\4.txt", "r");
+		FILE* fp5 = fopen("C:\\5.txt", "r");
+		fgets(str[0], 25, fp1);
+		fgets(str[1], 25, fp2);
+		fgets(str[2], 25, fp3);
+		fgets(str[3], 25, fp4);
+		fgets(str[4], 25, fp5);
+		fclose(fp1);
+		fclose(fp2);
+		fclose(fp3);
+		fclose(fp4);
+		fclose(fp5);
+	}
+
+	{
+		FILE* fp6 = fopen("C:\\6.txt", "r");
+		FILE* fp7 = fopen("C:\\7.txt", "r");
+		FILE* fp8 = fopen("C:\\8.txt", "r");
+		FILE* fp9 = fopen("C:\\9.txt", "r");
+		FILE* fp10 = fopen("C:\\10.txt", "r");
+		fgets(str[5], 25, fp6);
+		fgets(str[6], 25, fp7);
+		fgets(str[7], 25, fp8);
+		fgets(str[8], 25, fp9);
+		fgets(str[9], 25, fp10);
+		fclose(fp6);
+		fclose(fp7);
+		fclose(fp8);
+		fclose(fp9);
+		fclose(fp10);
+	}
+
+	{
+		FILE* fp11 = fopen("C:\\11.txt", "r");
+		FILE* fp12 = fopen("C:\\12.txt", "r");
+		FILE* fp13 = fopen("C:\\13.txt", "r");
+		FILE* fp14 = fopen("C:\\14.txt", "r");
+		FILE* fp15 = fopen("C:\\15.txt", "r");
+		fgets(str[10], 25, fp11);
+		fgets(str[11], 25, fp12);
+		fgets(str[12], 25, fp13);
+		fgets(str[13], 25, fp14);
+		fgets(str[14], 25, fp15);
+		fclose(fp11);
+		fclose(fp12);
+		fclose(fp13);
+		fclose(fp14);
+		fclose(fp15);
+	}
+
+	{
+		FILE* fp16 = fopen("C:\\16.txt", "r");
+		FILE* fp17 = fopen("C:\\17.txt", "r");
+		FILE* fp18 = fopen("C:\\18.txt", "r");
+		FILE* fp19 = fopen("C:\\19.txt", "r");
+		FILE* fp20 = fopen("C:\\20.txt", "r");
+		fgets(str[15], 25, fp16);
+		fgets(str[16], 25, fp17);
+		fgets(str[17], 25, fp18);
+		fgets(str[18], 25, fp19);
+		fgets(str[19], 25, fp20);
+		fclose(fp16);
+		fclose(fp17);
+		fclose(fp18);
+		fclose(fp19);
+		fclose(fp20);
+	}
+
+	{
+		int i;
+		cleardevice();
+		setbkcolor(LIGHTGRAY);
+		draw_home();
+
+		setcolor(RED);
+		rectangle(3, 28, 6, 31);
+		rectangle(9, 28, 12, 31);
+		rectangle(3, 34, 6, 37);
+		setfillstyle(SOLID_FILL, RED);
+		bar(9, 34, 12, 37);
+		puthz(16, 25, "财经新闻", 16, 16, RED);
+
+		line(0, 44, 640, 44);
+		puthz(16, 48, "国际财经", 16, 16, LIGHTGREEN);
+		line(310, 44, 310, 480);
+		puthz(336, 48, "国内财经", 16, 16, LIGHTGREEN);
+
+		setcolor(BLUE);
+		setfillstyle(SOLID_FILL, BLUE);
+		for (i = 0; i < 10; i++) {
+
+			circle(8, 75 + 23 * i, 2);
+			floodfill(8, 75 + 23 * i, BLUE);
+			puthz(16, 67 + 23 * i, str[i], 16, 16, 8);
+			outtextxy(215, 69 + 23 * i, "...");
+
+			circle(328, 75 + 23 * i, 2);
+			floodfill(328, 75 + 23 * i, BLUE);
+			puthz(336, 67 + 23 * i, str[i + 10], 16, 16, 8);
+			outtextxy(536, 69 + 23 * i, "...");
+		}
+	}
 }
 
 
